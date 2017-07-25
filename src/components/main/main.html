@@ -6,13 +6,13 @@
     <div class="input-group">
       <div class="col-xs-6 entry">
         <label>Movie Name</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="mainCtrl.options.newMovie.newMovieName">
       </div>
 
       <div class="col-xs-5 entry">
         <label>Genre</label>
         <br />
-        <select>
+        <select ng-model="mainCtrl.options.newMovie.newGenre">
           <option>Action</option>
           <option>Animation</option>
           <option>Comedy</option>
@@ -27,13 +27,13 @@
 
       <div class="col-xs-6 entry">
         <label>Actor(s)</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="mainCtrl.options.newMovie.newActors">
       </div>
 
       <div class="col-xs-5 entry">
         <label>Rating</label>
         <br />
-        <select>
+        <select ng-model="mainCtrl.options.newMovie.newRating">
           <option>0 Stars</option>
           <option>.5 Stars</option>
           <option>1 Star</option>
@@ -51,7 +51,7 @@
       <br /><br />
 
       <div class="col-xs-12">
-        <button ng-click="mainCtrl.add();">Add</button>
+        <button ng-click="mainCtrl.addMovie();">Add</button>
       </div>
     </div>
   </div>

@@ -5,7 +5,8 @@ angular.module('md.app', [
   'ui.router',
 
   //custom modules
-  'md.app.main'
+  'md.app.main',
+  'md.app.model'
 ])
   .config(function ($urlRouterProvider, $stateProvider) {
       // For any unmatched URL redirect to /
