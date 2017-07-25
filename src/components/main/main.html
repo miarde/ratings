@@ -1,13 +1,61 @@
 
-<div class="container">
-
-  <div class="alert alert-info">
-    <p>Sort Type: {{ mainCtrl.options.sortType }}</p>
-    <p>Sort Reverse: {{ mainCtrl.options.sortReverse }}</p>
-    <p>Search Query: {{ mainCtrl.options.searchMovies }}</p>
-  </div>
+<div class="container" ng-controller="MainCtrl as mainCtrl">
 
 <form>
+  <div class="form-group alert alert-info">
+    <div class="input-group">
+      <div class="col-xs-6 entry">
+        <label>Movie Name</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="col-xs-5 entry">
+        <label>Genre</label>
+        <br />
+        <select>
+          <option>Action</option>
+          <option>Animation</option>
+          <option>Comedy</option>
+          <option>Drama</option>
+          <option>Family</option>
+          <option>Musical</option>
+          <option>Sci-Fi</option>
+          <option>Special Interest</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="col-xs-6 entry">
+        <label>Actor(s)</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="col-xs-5 entry">
+        <label>Rating</label>
+        <br />
+        <select>
+          <option>0 Stars</option>
+          <option>.5 Stars</option>
+          <option>1 Star</option>
+          <option>1.5 Stars</option>
+          <option>2 Stars</option>
+          <option>2.5 Stars</option>
+          <option>3 Stars</option>
+          <option>3.5 Stars</option>
+          <option>4 Stars</option>
+          <option>4.5 Stars</option>
+          <option>5 Stars</option>
+        </select>
+      </div>
+
+      <br /><br />
+
+      <div class="col-xs-12">
+        <button ng-click="mainCtrl.add();">Add</button>
+      </div>
+    </div>
+  </div>
+
   <div class="form-group">
     <div class="input-group">
       <div class="input-group-addon">

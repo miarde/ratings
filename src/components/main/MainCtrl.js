@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('md.app.main')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope, $timeout) {
 
     var self = this;
 
@@ -47,6 +47,10 @@ angular.module('md.app.main')
     this.changeSort = function (sortType) {
       this.options.sortType = sortType;
       this.options.sortReverse = !this.options.sortReverse;
+    };
+
+    this.addMovie = function() {
+
     };
 
   });
