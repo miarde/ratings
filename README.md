@@ -1,4 +1,4 @@
-# Angular 1.x Fresh Project
+# Personal Movie Collection
 
 Quick Start
 -----------
@@ -18,10 +18,19 @@ Quick Start
 
 * To run the development server:
 
-        $ grunt server
+        $ grunt serve
 
   This will start a server on http://localhost:3000.  It should open a browser
-  tab for you automatically.  It will watch for changes in files and reload
-  automatically.
-# ratings
-# ratings
+  tab for you automatically.  
+
+#Offline Storage
+* Uses PouchDB to store movie data.  In the future, you could synch this with a CouchDB instance.  All data handling is done through a StorageService so if you wanted to change the implementation, you could without changing the interface.
+
+#ToDo
+* Incorporate Rotten Tomatoes or other movie API - as of now they're either paid services or require a review process.
+* Add the inline rating
+* Add unit tests
+* Add logging
+* Pull out option lists into constants
+* Add form validation
+* Reset form after adding

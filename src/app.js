@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('md.app', [
-  'ngSanitize',
-  'ui.router',
+    'ngSanitize',
+    'ui.router',
+    'pouchdb',
+    'toastr',
 
-  //custom modules
-  'md.app.main',
-  'md.app.model'
+    //custom modules
+    'md.app.main',
+    'md.app.model'
 ])
   .config(function ($urlRouterProvider, $stateProvider) {
       // For any unmatched URL redirect to /

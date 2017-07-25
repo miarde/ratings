@@ -81,3 +81,7 @@ body {
 .entry {
   margin: 5px;
 }
+
+.delete {
+  float: right;
+}
